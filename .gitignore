@@ -1,2 +1,8 @@
+# nodejs
 node_modules/
+
+# envrionment
 .env
+
+# test
+test.js
