@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 20, 2026 at 03:31 PM
+-- Generation Time: May 24, 2026 at 09:39 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -115,6 +115,7 @@ CREATE TABLE `UTILISATEUR` (
   `matricule` varchar(8) DEFAULT NULL,
   `type` enum('admin','enseignant','etudiant') NOT NULL DEFAULT 'etudiant',
   `email` varchar(100) NOT NULL,
+  `sexe` enum('m','f') NOT NULL DEFAULT 'm',
   `mdp_oublie` varchar(255) DEFAULT NULL,
   `date_mdp_oublie` datetime DEFAULT NULL COMMENT '<= 15 minutes',
   `etat_compte` enum('en attente','approuvé','rejeté') NOT NULL DEFAULT 'en attente',
