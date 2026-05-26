@@ -1,4 +1,5 @@
 import express from "express";
+import { errorHandler } from "./modules/middlewares/errorHandler.js";
 
 const app = express();
 
@@ -8,6 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // TODO: Add routes
 
-// TODO: Add error handler
+// Error handler
+app.use(errorHandler);
 
 export default app;
